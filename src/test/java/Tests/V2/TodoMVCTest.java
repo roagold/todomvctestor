@@ -1,4 +1,4 @@
-package oleg.ryabinskiy;
+package Tests.V2;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
@@ -18,9 +18,9 @@ import static java.util.Arrays.asList;
 /**
  * Created by oryabinskiy on 10/28/2015.
  */
-public class E2ETest extends AtTodoMVCPageWithClearedDataAfterEachTest {
+public class TodoMVCTest extends AtTodoMVCPageWithClearedDataAfterEachTest {
     @Test
-    public void todoMVCTest(){
+    public void testTaskLifeCycle(){
 
         add("1", "2", "3", "4");
         toggle("1");
@@ -52,7 +52,7 @@ public class E2ETest extends AtTodoMVCPageWithClearedDataAfterEachTest {
     }
 
     @Test
-    public void EditToEmpty(){
+    public void editToEmpty(){
 
         add("1");
         assertVisible("1");
@@ -61,7 +61,7 @@ public class E2ETest extends AtTodoMVCPageWithClearedDataAfterEachTest {
     }
 
     @Test
-    public void CancelEdit(){
+    public void cancelEdit(){
 
         add("1");
         assertVisible("1");

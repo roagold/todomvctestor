@@ -1,4 +1,4 @@
-package oleg.ryabinskiy;
+package Tests.V2;
 
 import org.junit.After;
 import org.junit.Before;
@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.open;
  */
 public class AtTodoMVCPageWithClearedDataAfterEachTest extends BaseTest {
     @Before
-    public void OpenPage(){
+    public void openPage(){
         open("http://todomvc.com/examples/troopjs_require/");
     }
 

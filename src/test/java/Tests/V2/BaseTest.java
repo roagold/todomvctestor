@@ -1,4 +1,4 @@
-package oleg.ryabinskiy;
+package Tests.V2;
 
 import com.codeborne.selenide.Screenshots;
 import com.google.common.io.Files;
