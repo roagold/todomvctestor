@@ -10,9 +10,7 @@ import static com.codeborne.selenide.CollectionCondition.exactTexts;
 import static com.codeborne.selenide.Condition.cssClass;
 import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 
 /**
  * Created by oryabinskiy on 11/3/2015.
@@ -88,10 +86,9 @@ public class TodoMVCTest {
         return tasks.find(cssClass("editing")).find(".edit").setValue(newName);
     }
 
-    public void assertVisible(String... texts){
-        tasks.filter(visible).shouldHave(exactTexts(texts));
+    public void assertVisible(String... names){
+        tasks.filter(visible).shouldHave(exactTexts(names));
     }
-
 
     public void assertNoVisibleTasks() {
         tasks.filter(visible).shouldBe(empty);

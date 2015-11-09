@@ -120,8 +120,8 @@ public class TodoMVCTest extends AtTodoMVCPageWithClearedDataAfterEachTest {
     }
 
     @Step
-    public void assertVisible(String... texts){
-        tasks.filter(visible).shouldHave(exactTexts(texts));
+    public void assertVisible(String... names){
+        tasks.filter(visible).shouldHave(exactTexts(names));
     }
 
     @Step

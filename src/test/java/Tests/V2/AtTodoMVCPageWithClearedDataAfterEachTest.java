@@ -18,6 +18,5 @@ public class AtTodoMVCPageWithClearedDataAfterEachTest extends BaseTest {
     @After
     public void clearData(){
         executeJavaScript("localStorage.clear()");
-
     }
 }
