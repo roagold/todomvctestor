@@ -18,7 +18,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class TodoMVCTest {
     @Test
     public void testTasksLifeCycle(){
-        open("http://todomvc.com/examples/troopjs_require/");
+        open("https://todomvc4tasj.herokuapp.com/");
 
         add("1");
         toggle("1");

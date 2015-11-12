@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class AtTodoMVCPageWithClearedDataAfterEachTest  extends Tests.V3.BaseTest {
     @Before
     public void openPage(){
-        open("http://todomvc.com/examples/troopjs_require/");
+        open("https://todomvc4tasj.herokuapp.com/");
     }
 
     @After
